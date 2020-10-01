@@ -21,7 +21,9 @@ app.config['JWT_SECRET_KEY'] = os.environ['secretKey']
 def login():
     data = json.loads(request.data)
     db = DbSession()
-    user = db.query(User).filter_by(email=data['email'], password=hashlib.sha256(data['password']).hexdigest()).first()
+    print(data)
+    user = db.query(User).filter_by(email=data['email'], password=hashlib.sha256(data['password'].encode()).hexdigest()).first()
+    print(user)
     if user:
         token = create_access_token(identity=data['email'])
         return jsonify({'token': token, "action": "successful"})
@@ -32,7 +34,7 @@ def login():
 def signup():
     data = json.loads(request.data)
     try:
-        user = User(name=data['name'], email=data['email'], password=hashlib.sha256(data['email']).hexdigest())
+        user = User(name=data['name'], email=data['email'], password=hashlib.sha256(data['password'].encode()).hexdigest())
         db = DbSession()
         db.add(user)
         db.commit()
