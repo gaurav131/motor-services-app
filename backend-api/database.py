@@ -20,6 +20,7 @@ class Cart(Base):
     __tablename__ = "cart"
     id = Column(Integer, primary_key=True)
     name = Column(String, nullable=False)
+    date = Column(String, nullable=False)
     email = Column(String, ForeignKey("user.email"))
     user = relationship(User, lazy='subquery')
 

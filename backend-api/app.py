@@ -21,9 +21,7 @@ app.config['JWT_SECRET_KEY'] = os.environ['secretKey']
 def login():
     data = json.loads(request.data)
     db = DbSession()
-    print(data)
     user = db.query(User).filter_by(email=data['email'], password=hashlib.sha256(data['password'].encode()).hexdigest()).first()
-    print(user)
     if user:
         token = create_access_token(identity=data['email'])
         return jsonify({'token': token, "action": "successful"})
@@ -44,10 +42,21 @@ def signup():
         return jsonify({'action': 'failed'})
 
 
-@app.route('/authenticate/', methods=['get', 'post'])
+@app.route('/addToCart/', methods=['get', 'post'])
 @jwt_required
-def testingApi():
-    return jsonify({'verified': 'true'})
+def addToCart():
+    data = json.loads(request.data)
+    db = DbSession()
+    try:
+        user = db.query(User).filter_by(email=data['email']).first()
+        item = Cart(name=data['name'], date=data['date'], email=data['email'], user=user)
+        db.add(item)
+        db.commit()
+        db.close()
+    except:
+        db.close()
+        return jsonify({'action': 'failed'})
+    return jsonify({'action': 'successful'})
 
 
 if __name__ == '__main__':

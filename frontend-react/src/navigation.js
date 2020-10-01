@@ -3,6 +3,7 @@ import React, {Component} from "react";
 import { Button } from '@rmwc/button';
 class Navigation extends Component{
     render() {
+      console.log(this.props.cart)
         return (
             <Navbar bg="dark" variant="dark" expand="lg" id='navBar'>
               <Navbar.Brand href="#home">MOTOR SERVICES</Navbar.Brand>
@@ -10,9 +11,12 @@ class Navigation extends Component{
               {this.props.login &&(
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="ml-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#link">Link</Nav.Link>
-                    <Button raised>Buy</Button>
+                    <Button raised className='navButton' onClick={(e) => {
+                      this.props.handleCartButton(e)
+                    console.log('test')
+                    }}>Cart <span>{this.props.cart.length}</span></Button>
+                    <Button raised onClick={() => this.props.handleLogout()} className='navButton'>Logout
+                    </Button>
                   </Nav>
                 </Navbar.Collapse>
               )}

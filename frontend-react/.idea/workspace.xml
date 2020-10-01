@@ -14,11 +14,13 @@
       <change afterPath="$PROJECT_DIR$/src/assets/service1.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/assets/service2.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/assets/service3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cart.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/productPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +86,7 @@
       <updated>1601476665569</updated>
       <workItem from="1601476667631" duration="13701000" />
       <workItem from="1601528800674" duration="2136000" />
-      <workItem from="1601532671156" duration="13923000" />
+      <workItem from="1601532671156" duration="24613000" />
     </task>
     <task id="LOCAL-00001" summary="made login backend and starting to complete login using jwt">
       <created>1601542983831</created>
@@ -121,22 +123,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="698" y="229" key="#JavaScript/0.0.1920.1040@0.0.1920.1040" timestamp="1601478773459" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1601542827277">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1601557965731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601542827277" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1601542827277">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601557965731" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1601557965731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601542827277" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1601542827277">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601557965731" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1601557965731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601542827277" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1601542827277">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601557965731" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1601557965731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601542827277" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601557965731" />
     <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1601542997785">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

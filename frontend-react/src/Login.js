@@ -20,7 +20,7 @@ class Login extends React.Component{
     console.log(email, password)
     loginApi(email, password).then(data => {
       if (data.action === 'successful') {
-        return this.props.storeToken(data)
+        return this.props.storeToken(data, email)
       }
       alert('wrong email or password')
     })
